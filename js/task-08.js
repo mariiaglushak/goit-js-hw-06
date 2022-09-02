@@ -10,12 +10,12 @@ function submitDefault(event) {
     if (email.value === "" || password.value === "") {
         return alert("Всі поля повинні бути заповнені!")
     }
-
     const object = {
         email: email.value,
         password : password.value
     }
     console.log(object)
+    event.currentTarget.reset();
 }
 
 // Напиши скрипт управління формою логіна.
@@ -23,7 +23,7 @@ function submitDefault(event) {
 // <form class="login-form">
 //   <label>
 //     Email
-//     <input type="email" name="emaiegedvsdvl" />
+//     <input type="email" name="email" />
 //   </label>
 //   <label>
 //     Password
