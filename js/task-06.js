@@ -8,6 +8,7 @@ formInput.addEventListener("blur", (event) => {
         formInput.classList.add('valid')
         return
     } else {
+        formInput.classList.remove('valid')
         formInput.classList.add('invalid')
     }
 });
